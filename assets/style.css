@@ -56,7 +56,7 @@ footer ul li {
     width: 8%
 }
 
-footer ul:nth-child(2) li {
+footer ul:nth-child(3) li {
     margin: 0 12%;
     width: 8%
 }
@@ -83,7 +83,7 @@ li a:hover {
         margin: 20px 28px
     }
     footer ul li,
-    footer ul:nth-child(2) li {
+    footer ul:nth-child(3) li {
         margin: 50px 35%;
         width: 30%
     }
