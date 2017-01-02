@@ -16,10 +16,29 @@ permalink: /
 
 </script>
 <link rel="stylesheet" href="/assets/style.css" type="text/css" media="all">
+
+<!-- unslider -->
+<link rel="stylesheet" href="/assets/css/unslider.css">
+<link rel="stylesheet" href="/assets/css/unslider-dots.css">
+
+
+
 </head>
 <body>
 <main class="container">
-  <div class="content"> <img src="/assets/KEO_8289.jpg" alt="Kala Alexander, Pipeline." />
+
+  <div class="content"> 
+
+  <!-- <img src="/assets/KEO_8289.jpg" alt="Kala Alexander, Pipeline." /> -->
+
+  <div class="my-slider">
+    <ul>
+      <li><img src="/assets/KEO_8289.jpg" alt=""></li>
+      <li><img src="/assets/IMG_5701.jpg" alt=""></li>
+    </ul>
+  </div>
+
+
   <div class="social">
   	<ul>
     	<li><a href="https://www.instagram.com/kala_dacaptain/" target="_blank"><img src="/assets/instagram.svg" alt="@kala_dacaptain on Instagram" /></a></li>
@@ -30,10 +49,10 @@ permalink: /
   </main>
       <footer>
       <ul>
-        <li class="mauli"><a href="https://www.mauliola.org/" target="_blank"><img src="/assets/mauli.jpg" alt="Mauli" /></a></li>
+        <li class="mauli"><a href="http://www.mauliola.org/" target="_blank"><img src="/assets/mauli.jpg" alt="Mauli" /></a></li>
         <li class="ambry"><a href="https://www.ambrygen.com/" target="_blank"><img src="/assets/ambry.png" alt="Ambry Genetics" /></a></li>
         <li class="ath"><a href="https://www.athorganics.com/" target="_blank"><img src="/assets/ath.png" alt="ATH Organics" /></a></li>
-        <li class="dhd"><a href="https://www.dhdsurf.com/" target="_blank"><img src="/assets/dhd.gif" alt="DHD Surfboards" /></a></li>
+        <li class="dhd"><a href="http://www.dhdsurf.com/" target="_blank"><img src="/assets/dhd.gif" alt="DHD Surfboards" /></a></li>
         <li class="rvca"><a href="https://www.rvca.com/" target="_blank"><img src="/assets/rvca.jpg" alt="RVCA" /></a></li>
       </ul>
       
@@ -46,12 +65,29 @@ permalink: /
       </ul>
 
       <ul>
-      	<li class="triumph"><a href="https://www.triumphunited.com/" target="_blank"><img src="/assets/triumph.jpg" alt="Triumph United" /></a></li>  
+      	<li class="triumph"><a href="http://www.triumphunited.com/" target="_blank"><img src="/assets/triumph.jpg" alt="Triumph United" /></a></li>  
         <li class="moya"><a href="https://www.moyabrand.com" target="_blank"><img src="/assets/moya.jpg" alt="Moya Brand" /></a></li>
-        <li class="konos"><a href="https://www.konosnorthshore.com/" target="_blank"><img src="/assets/konos.png" alt="Kono's Restaurant" /></a></li>
-        <li class="seeker"><a href="https://www.seekerrods.com/" target="_blank"><img src="/assets/seeker.jpg" alt="Seeker Fishing Rods" /></a></li>
+        <li class="konos"><a href="http://www.konosnorthshore.com/" target="_blank"><img src="/assets/konos.png" alt="Kono's Restaurant" /></a></li>
+        <li class="seeker"><a href="http://www.seekerrods.com/" target="_blank"><img src="/assets/seeker.jpg" alt="Seeker Fishing Rods" /></a></li>
       </ul>
     </footer>
 </div>
+
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="/assets/js/unslider.js"></script>
+<script src="//stephband.info/jquery.event.move/js/jquery.event.move.js"></script>
+<script src="//stephband.info/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+      $('.my-slider').unslider({
+        autoplay: true,
+        arrows: false,
+        dots: true,
+        nav: true
+      });
+    });
+</script>
+
 </body>
 </html>
