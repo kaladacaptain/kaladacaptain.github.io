@@ -39,8 +39,13 @@ permalink: /
 
   <!-- <img src="/assets/KEO_8289.jpg" alt="Kala Alexander, Pipeline." /> -->
 
+  <div class="centered">
+    <h1 class="title-font">KALA 'DA CAPTAIN' ALEXANDER</h1>
+  </div>
+
   <div class="my-slider">
     <ul>
+      <li><div class="video-container"><iframe src="https://player.vimeo.com/video/162709854?title=0&byline=0&portrait=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></li>
       <li><a href="http://www.gofishinghawaii.com"><img src="/assets/slide4.jpg" alt="Go Fishing Hawaii"></a></li>
       <li><img src="/assets/KEO_8289.jpg" alt=""></li>
       <li><img src="/assets/IMG_5701.jpg" alt=""></li>
@@ -48,14 +53,9 @@ permalink: /
     </ul>
   </div>
 
-  <div class="centered">
-    <h1 class="title-font">KALA 'DA CAPTAIN' ALEXANDER</h1>
-  </div>
-
-
   <div class="social">
-  	<ul>
-    	<li><a href="https://www.instagram.com/kala_dacaptain/" target="_blank"><img src="/assets/instagram.svg" alt="@kala_dacaptain on Instagram" /></a></li>
+    <ul>
+      <li><a href="https://www.instagram.com/kala_dacaptain/" target="_blank"><img src="/assets/instagram.svg" alt="@kala_dacaptain on Instagram" /></a></li>
         <li><a href="https://www.facebook.com/KalaAlexander.Athlete/" target="_blank"><img src="/assets/facebook.svg" alt="Kala Alexander on Facebook" /></a></li>
         <li><a href="https://twitter.com/kaladacaptain/" target="_blank"><img src="/assets/twitter.svg" alt="@kaladacaptain on Twitter" /></a></li>
     </ul>
@@ -98,17 +98,25 @@ permalink: /
 
 
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="/assets/js/unslider.js"></script>
 <script src="//stephband.info/jquery.event.move/js/jquery.event.move.js"></script>
 <script src="//stephband.info/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+<script src="/assets/js/unslider.js"></script>
+
 <script>
     jQuery(document).ready(function($) {
-      $('.my-slider').unslider({
+      var $slider = $('.my-slider').unslider({
         autoplay: true,
         arrows: false,
         delay: 5000,
         dots: true,
-        nav: true
+        nav: false,
+        animateHeight: true,
+      });
+
+      $slider.on('mouseover', function() {
+        $slider.data('unslider').stop();
+      }).on('mouseout', function() {
+          $slider.data('unslider').start();
       });
     });
 </script>
